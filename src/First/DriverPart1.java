@@ -6,6 +6,11 @@ import Fourth.*;
 import Fifth.*;
 public class DriverPart1 {
 
+        /**
+         * Main method. Creates two  arrays of 15 flying objects. Tests the .equals() method
+         * on some of the objects.Creates a second array of 15 flying objects. Tests findLeastandMostExpensive method.
+         * @param args
+         */
 	public static void main(String[] args) {
 
         /* Create 15 objects inside an array of FlyingObject */
@@ -66,6 +71,10 @@ public class DriverPart1 {
 
         }
 
+        /**
+         * Finds the least and most expensive UAV member of the flying object array.
+         * @param f Array of flying objects
+         */
         public static void findLeastAndMostExpensiveUAV(FlyingObject[] f){
                 double max = 0;
                 double min = 100000000000000000.0;
