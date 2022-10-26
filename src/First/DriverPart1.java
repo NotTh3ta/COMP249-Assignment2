@@ -2,8 +2,9 @@ package First;
 import Second.*;
 import Third.*;
 import Fourth.*;
+
 import Fifth.*;
-public class Driver {
+public class DriverPart1 {
 
 	public static void main(String[] args) {
 
@@ -12,9 +13,9 @@ public class Driver {
        fo1[0] = new Airplane();
        fo1[1] = new Airplane("Bombardier", 100000, 75);
        fo1[2] = new Helicopter();
-       fo1[3] = new Helicopter("Bell", 100000, 30, 15, 1, 7);
+       fo1[3] = new Helicopter("Bell", 100000, 30, 15, 1997, 7);
        fo1[4] = new Quadcopter();
-       fo1[5] = new Quadcopter();
+       fo1[5] = new Quadcopter("Apple", 10000, 20, 3, 2001, 0, 20);
        fo1[6] = new UAV();
        fo1[7] = new UAV();
        fo1[8] = new AgriculturalDrone();
@@ -26,7 +27,7 @@ public class Driver {
        fo1[14]  = new Multirotor();
        //Displays the information of all flying objects in the array
         for (int i = 0; i < fo1.length; i++) {
-        System.out.println(fo1[i].toString());
+                System.out.println(fo1[i].toString());
         }
         //Testing equality
         System.out.println("Testing equality with two different airplanes");
@@ -39,6 +40,10 @@ public class Driver {
         System.out.println(fo1[4].equals(fo1[2]));
         System.out.println("Testing Multirotor and quadcopter (Brothers)");
         System.out.println(fo1[4].equals(fo1[12]));
+        
+        //Finding least and most expensive UAV
+        findLeastAndMostExpensiveUAV(fo1);
+
         FlyingObject [] fo2 = new FlyingObject[15];
         fo2[0] = new Airplane();
         fo2[1] = new Airplane("Bombardier", 100000, 75);
@@ -55,8 +60,11 @@ public class Driver {
         fo2[12] = new Multirotor();
         fo2[13] = new Multirotor();
         fo2[14]  = new Multirotor();
-        }
+        
+        //Find least and most expensive UAV
+        findLeastAndMostExpensiveUAV(fo2);
 
+        }
 
         public static void findLeastAndMostExpensiveUAV(FlyingObject[] f){
                 double max = 0;
