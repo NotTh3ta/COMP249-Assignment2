@@ -19,14 +19,14 @@ public class DriverPart1 {
                 fo1[4] = new Quadcopter();
                 fo1[5] = new Quadcopter("Apple", 10000, 20, 3, 2001, 0, 20);
                 fo1[6] = new UAV();
-                fo1[7] = new UAV();
+                fo1[7] = new UAV(10000, 200);
                 fo1[8] = new AgriculturalDrone();
-                fo1[9] = new AgriculturalDrone();
+                fo1[9] = new AgriculturalDrone(100, 150, "DJI", 50);
                 fo1[10] = new MAV();
-                fo1[11] = new MAV();
+                fo1[11] = new MAV(50, 50, "Airbus", 10);
                 fo1[12] = new Multirotor();
-                fo1[13] = new Multirotor();
-                fo1[14] = new Multirotor();
+                fo1[13] = new Multirotor("Bell", 200000, 5100, 4, 2003, 0, 0);
+                fo1[14] = new Multirotor("Boeing", 100, 40, 3, 2009, 2, 5);
                 // Displays the information of all flying objects in the array
                 for (int i = 0; i < fo1.length; i++) {
                         System.out.println(fo1[i].toString());
@@ -43,7 +43,7 @@ public class DriverPart1 {
                 System.out.println("Testing Multirotor and quadcopter (Brothers)");
                 System.out.println(fo1[4].equals(fo1[12]));
 
-                // Finding least and most expensive UAV
+                // Finding least and most expensive UAV for the first array  
                 findLeastAndMostExpensiveUAV(fo1);
 
                 FlyingObject[] fo2 = new FlyingObject[15];
@@ -63,7 +63,7 @@ public class DriverPart1 {
                 fo2[13] = new Multirotor();
                 fo2[14] = new Multirotor();
 
-                // Find least and most expensive UAV
+                // Find least and most expensive UAV for the second array
                 findLeastAndMostExpensiveUAV(fo2);
 
         }
@@ -102,11 +102,9 @@ public class DriverPart1 {
                 }
 
                 // If the index is the same, that means that nothing more expensive or less
-                // expensive
-                // was found
+                // expensive was found
                 else if (indexOfLeastExpensive == indexOfMostExpensive) {
-                        System.out.println(
-                                        "There is nothing more expensive or less expensive than this flying object: ");
+                        System.out.println("There is nothing more expensive or less expensive than this flying object: ");
                         System.out.println(f[indexOfLeastExpensive]);
                         return;
                 }
