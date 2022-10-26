@@ -1,8 +1,8 @@
 package Fourth;
+import First.*;
 
-public class UAV {
+public class UAV extends FlyingObject{
     protected double weight;
-    protected double price;
 
     //Constructors
     public UAV(){

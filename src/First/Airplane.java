@@ -1,8 +1,7 @@
 package First;
 
-public class Airplane {
+public class Airplane extends FlyingObject{
     protected String brand;
-    protected double price;
     protected int horsepower;
 
     //Constructors
