@@ -6,22 +6,7 @@ import Fifth.*;
 public class Driver {
 
 	public static void main(String[] args) {
-        Airplane a1 = new Airplane();
-        System.out.println("I just created an airplane");
-        System.out.println(a1);
-        Helicopter h1 = new Helicopter();
-        Helicopter h2 = new Helicopter();
-        System.out.println("I just created joe mother");
-        System.out.println(h1);
-        Quadcopter q1 = new Quadcopter(); 
-        System.out.println(q1);
-	
-        System.out.println(h1.equals(h2));
 
-        UAV uav1 = new UAV();
-        System.out.println(uav1);
-        MAV mav1 = new MAV();
-        System.out.println(mav1);
         }
 
         public static void findLeastAndMostExpensiveUAV(FlyingObject[] f){
@@ -49,9 +34,28 @@ public class Driver {
                         }        
                 }
 
+                //If the number of Airplane objects is equal to the length of the array,
+                //it implies that there are no UAV objects
+                if(nOfAirplanes == f.length){
+                        System.out.println("There are no UAVs in this array");
+                        return;
+                }
 
-                if(indexOfLeastExpensive == indexOfMostExpensive){
-                        System.out.println("Here is the ");
+                //If the index is the same, that means taht nothing more expensive or less expensive
+                //was found
+                else if(indexOfLeastExpensive == indexOfMostExpensive){
+                        System.out.println("There is nothing more expensive or less expensive than this flying object: ");
+                        System.out.println(f[indexOfLeastExpensive]);
+                        return;
+                }
+
+                //If neither of the cases above are true, print information of the least and most expensive
+                else{
+                        System.out.println("The most expensive UAV is:");
+                        System.out.println(f[indexOfMostExpensive]);
+                        System.out.println("The least expensive UAV is:");
+                        System.out.println(f[indexOfLeastExpensive]);
+                        return;
                 }
         }
 
