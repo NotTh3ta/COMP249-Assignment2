@@ -12,7 +12,7 @@ public class Driver {
        fo1[0] = new Airplane();
        fo1[1] = new Airplane("Bombardier", 100000, 75);
        fo1[2] = new Helicopter();
-       fo1[3] = new Helicopter();
+       fo1[3] = new Helicopter("Bell", 100000, 30, 15, 1, 7)
        fo1[4] = new Quadcopter();
        fo1[5] = new Quadcopter();
        fo1[6] = new UAV();
