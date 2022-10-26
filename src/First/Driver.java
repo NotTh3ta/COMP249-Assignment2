@@ -39,10 +39,25 @@ public class Driver {
         System.out.println(fo1[4].equals(fo1[2]));
         System.out.println("Testing Multirotor and quadcopter (Brothers)");
         System.out.println(fo1[4].equals(fo1[12]));
+        FlyingObject [] fo2 = new FlyingObject[15];
+        fo2[0] = new Airplane();
+        fo2[1] = new Airplane("Bombardier", 100000, 75);
+        fo2[2] = new Helicopter();
+        fo2[3] = new Helicopter();
+        fo2[4] = new Quadcopter();
+        fo2[5] = new Quadcopter();
+        fo2[6] = new Airplane();
+        fo2[7] = new Airplane();
+        fo2[8] = new Helicopter();
+        fo2[9] = new Helicopter();
+        fo2[10] = new Quadcopter();
+        fo2[11] = new Quadcopter();
+        fo2[12] = new Multirotor();
+        fo2[13] = new Multirotor();
+        fo2[14]  = new Multirotor();
         }
 
-        FlyingObject [] fo2 = new FlyingObject[15];
-        
+       
 
         public static void findLeastAndMostExpensiveUAV(FlyingObject[] f){
                 double max = f[0].price;
