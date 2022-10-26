@@ -69,9 +69,28 @@ public class Driver {
                         }        
                 }
 
+                //If the number of Airplane objects is equal to the length of the array,
+                //it implies that there are no UAV objects
+                if(nOfAirplanes == f.length){
+                        System.out.println("There are no UAVs in this array");
+                        return;
+                }
 
-                if(indexOfLeastExpensive == indexOfMostExpensive){
-                        System.out.println("Here is the ");
+                //If the index is the same, that means taht nothing more expensive or less expensive
+                //was found
+                else if(indexOfLeastExpensive == indexOfMostExpensive){
+                        System.out.println("There is nothing more expensive or less expensive than this flying object: ");
+                        System.out.println(f[indexOfLeastExpensive]);
+                        return;
+                }
+
+                //If neither of the cases above are true, print information of the least and most expensive
+                else{
+                        System.out.println("The most expensive UAV is:");
+                        System.out.println(f[indexOfMostExpensive]);
+                        System.out.println("The least expensive UAV is:");
+                        System.out.println(f[indexOfLeastExpensive]);
+                        return;
                 }
         }
 
