@@ -1,26 +1,27 @@
 package Fourth;
+
 import First.*;
 
-public class UAV extends FlyingObject{
+public class UAV extends FlyingObject {
     protected double weight;
 
-    //Constructors
-    public UAV(){
+    // Constructors
+    public UAV() {
         weight = 5000.0;
         price = 1000000.0;
     }
 
-    public UAV(double _weight, double _price){
+    public UAV(double _weight, double _price) {
         weight = _weight;
         price = _price;
     }
 
-    public UAV(UAV u){
+    public UAV(UAV u) {
         weight = u.weight;
         price = u.price;
     }
 
-    //Accessors
+    // Accessors
     public double getWeight() {
         return this.weight;
     }
@@ -29,7 +30,7 @@ public class UAV extends FlyingObject{
         return this.price;
     }
 
-    //Mutators
+    // Mutators
     public void setWeight(double weight) {
         this.weight = weight;
     }
@@ -38,17 +39,18 @@ public class UAV extends FlyingObject{
         this.price = price;
     }
 
-    //toString
+    // toString
     public String toString() {
         String fullClassName = this.getClass().toString();
         String simpleClassName = fullClassName.substring(fullClassName.lastIndexOf('.') + 1);
 
-        return "This " +simpleClassName+ " weights "+weight+" kgs and its price is "+ price+"$CAD.";
+        return "This " + simpleClassName + " weights " + weight + " kgs and its price is " + price + "$CAD.";
     }
 
-    //equals
-    public boolean equals(Object x){
-        if(x == null || this.getClass() != x.getClass()) return false;
+    // equals
+    public boolean equals(Object x) {
+        if (x == null || this.getClass() != x.getClass())
+            return false;
         UAV u = (UAV) x;
         return (weight == u.weight && price == u.price);
     }
