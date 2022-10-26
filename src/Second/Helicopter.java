@@ -1,4 +1,5 @@
 package Second;
+
 import First.Airplane;
 //Helicopter class 
 public class Helicopter extends Airplane{
@@ -61,32 +62,33 @@ public class Helicopter extends Airplane{
         return creationYear;
     }
 
-    public int getPassengerCapacity(){
+    public int getPassengerCapacity() {
         return passengerCapacity;
     }
 
-    //Mutators
-    public void setNumberOfCylinders(int n){
+    // Mutators
+    public void setNumberOfCylinders(int n) {
         numberOfCylinders = n;
     }
 
-    public void setCreationYear(int y){
+    public void setCreationYear(int y) {
         creationYear = y;
     }
 
-    public void setPassengerCapacity(int p){
+    public void setPassengerCapacity(int p) {
         passengerCapacity = p;
     }
 
-    //toString
-    public String toString(){
+    // toString
+    public String toString() {
         return super.toString() + " It has " + numberOfCylinders + " cylinders. It was made in " + creationYear
-                + ". Its passenger capacity is " + passengerCapacity+"."; 
+                + ". Its passenger capacity is " + passengerCapacity + ".";
     }
 
-    //equals
-    public boolean equals(Object x){
-        if(x == null || this.getClass() != x.getClass()) return false;
+    // equals
+    public boolean equals(Object x) {
+        if (x == null || this.getClass() != x.getClass())
+            return false;
         Helicopter h = (Helicopter) x;
         return (super.equals(x) && numberOfCylinders == h.numberOfCylinders && creationYear == h.creationYear
                 && passengerCapacity == h.passengerCapacity);
