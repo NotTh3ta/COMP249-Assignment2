@@ -11,10 +11,10 @@ public class Airplane extends FlyingObject{
         horsepower = 2000;
     }
 
-    public Airplane(String s, double d, int i){
-        brand = s;
-        price = d;
-        horsepower = i;
+    public Airplane(String _brand, double _price, int hp){
+        brand =_brand;
+        price = _price;
+        horsepower = hp;
     }
 
     public Airplane(Airplane a){

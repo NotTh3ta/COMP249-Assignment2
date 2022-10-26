@@ -9,9 +9,9 @@ public class Quadcopter extends Helicopter{
         maxFlyingSpeed = 100;
     }
 
-    public Quadcopter(String s, double d, int i, int x, int y, int z, int f){
-        super(s, d, i, x, y, z);
-        maxFlyingSpeed = f;
+    public Quadcopter(String _brand, double _price, int hp, int nCyl, int cYear, int passCap, int maxS){
+        super(_brand, _price, hp, nCyl, cYear, passCap);
+        maxFlyingSpeed = maxS;
     }
 
     public Quadcopter(Quadcopter q){

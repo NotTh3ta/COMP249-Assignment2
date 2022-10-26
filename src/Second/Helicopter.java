@@ -14,11 +14,11 @@ public class Helicopter extends Airplane{
         passengerCapacity = 10;
     }
 
-    public Helicopter(String s, double d, int i, int x, int y, int z){
-        super(s, d, i);
-        numberOfCylinders = x;
-        creationYear = y;
-        passengerCapacity = z;
+    public Helicopter(String _brand, double _price, int hp, int nCyl, int cYear, int passCap){
+        super(_brand, _price, hp);
+        numberOfCylinders = nCyl;
+        creationYear = cYear;
+        passengerCapacity = passCap;
     }
 
     public Helicopter(Helicopter h){

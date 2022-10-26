@@ -12,10 +12,10 @@ public class AgriculturalDrone extends UAV{
         carryCapacity = 50;
     }
 
-    public AgriculturalDrone(double w, double p, String b, int c){
-        super(w, p);
-        brand = b;
-        carryCapacity = c;
+    public AgriculturalDrone(double _weight, double _price, String _brand, int _cap){
+        super(_weight, _price);
+        brand = _brand;
+        carryCapacity = _cap;
     }
 
     public AgriculturalDrone(AgriculturalDrone a){
