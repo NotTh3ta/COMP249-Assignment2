@@ -6,23 +6,43 @@ import Fifth.*;
 public class Driver {
 
 	public static void main(String[] args) {
-        Airplane a1 = new Airplane();
-        System.out.println("I just created an airplane");
-        System.out.println(a1);
-        Helicopter h1 = new Helicopter();
-        Helicopter h2 = new Helicopter();
-        System.out.println("I just created joe mother");
-        System.out.println(h1);
-        Quadcopter q1 = new Quadcopter(); 
-        System.out.println(q1);
-	
-        System.out.println(h1.equals(h2));
 
-        UAV uav1 = new UAV();
-        System.out.println(uav1);
-        MAV mav1 = new MAV();
-        System.out.println(mav1);
+        /* Create 15 objects inside an array of FlyingObject */
+       FlyingObject [] fo1 = new FlyingObject[15]; // Flying objects 1 array
+       fo1[0] = new Airplane();
+       fo1[1] = new Airplane("Bombardier", 100000, 75);
+       fo1[2] = new Helicopter();
+       fo1[3] = new Helicopter();
+       fo1[4] = new Quadcopter();
+       fo1[5] = new Quadcopter();
+       fo1[6] = new UAV();
+       fo1[7] = new UAV();
+       fo1[8] = new AgriculturalDrone();
+       fo1[9] = new AgriculturalDrone();
+       fo1[10] = new MAV();
+       fo1[11] = new MAV();
+       fo1[12] = new Multirotor();
+       fo1[13] = new Multirotor();
+       fo1[14]  = new Multirotor();
+       //Displays the information of all flying objects in the array
+        for (int i = 0; i < fo1.length; i++) {
+        System.out.println(fo1[i].toString());
         }
+        //Testing equality
+        System.out.println("Testing equality with two different airplanes");
+        System.out.println(fo1[0].equals(fo1[1]));
+        System.out.println("Testing two equal airplanes");
+        System.out.println(fo1[0].equals(fo1[0]));
+        System.out.println("Testing equality of Airplane and Helicopter (Father and Child)");
+        System.out.println(fo1[0].equals(fo1[2]));
+        System.out.println("Testing equality of Quadcopter and Helicoper (Child and Father)");
+        System.out.println(fo1[4].equals(fo1[2]));
+        System.out.println("Testing Multirotor and quadcopter (Brothers)");
+        System.out.println(fo1[4].equals(fo1[12]));
+        }
+
+        FlyingObject [] fo2 = new FlyingObject[15];
+        
 
         public static void findLeastAndMostExpensiveUAV(FlyingObject[] f){
                 double max = f[0].price;
