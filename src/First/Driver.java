@@ -39,16 +39,16 @@ public class Driver {
         System.out.println(fo1[4].equals(fo1[2]));
         System.out.println("Testing Multirotor and quadcopter (Brothers)");
         System.out.println(fo1[4].equals(fo1[12]));
+        
+        findLeastAndMostExpensiveUAV(fo1);
         }
 
-        FlyingObject [] fo2 = new FlyingObject[15];
-        
 
         public static void findLeastAndMostExpensiveUAV(FlyingObject[] f){
-                double max = f[0].price;
-                double min = f[0].price;
-                int indexOfMostExpensive = 0;
-                int indexOfLeastExpensive = 0;
+                double max = 0;
+                double min = 100000000000000000.0;
+                int indexOfMostExpensive = -1;
+                int indexOfLeastExpensive = -1;
                 int nOfAirplanes = 0;
 
                 //Main loop where we go through every index of the array.
