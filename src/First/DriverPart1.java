@@ -101,7 +101,7 @@ public class DriverPart1 {
                         return;
                 }
 
-                // If the index is the same, that means taht nothing more expensive or less
+                // If the index is the same, that means that nothing more expensive or less
                 // expensive
                 // was found
                 else if (indexOfLeastExpensive == indexOfMostExpensive) {
