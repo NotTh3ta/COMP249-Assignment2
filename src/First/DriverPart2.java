@@ -3,7 +3,7 @@ import Second.*;
 import Third.*;
 import Fourth.*;
 import Fifth.*;
-public class Driver2 {
+public class DriverPart2 {
     //Takes an array as input and returns copy of this array
     public static FlyingObject[] copyFlyingObjects ( FlyingObject[] _fo){
         FlyingObject[] fo1 = new FlyingObject[_fo.length];
