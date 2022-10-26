@@ -12,10 +12,10 @@ public class MAV extends UAV {
         size = 10.0;
     }
 
-    public MAV(double w, double p, String m, double s){
-        super(w, p);
-        model = m;
-        size = s;
+    public MAV(double _weight, double _price, String _model, double _size){
+        super(_weight, _price);
+        model = _model;
+        size = _size;
     }
 
     public MAV(MAV m){

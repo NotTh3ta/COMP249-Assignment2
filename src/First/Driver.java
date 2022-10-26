@@ -39,7 +39,8 @@ public class Driver {
         System.out.println(fo1[4].equals(fo1[2]));
         System.out.println("Testing Multirotor and quadcopter (Brothers)");
         System.out.println(fo1[4].equals(fo1[12]));
-        FlyingObject [] fo2 = new FlyingObject[15];
+
+        FlyingObject [] fo2 = new FlyingObject[15]; // This array does not contain any UAV objects
         fo2[0] = new Airplane();
         fo2[1] = new Airplane("Bombardier", 100000, 75);
         fo2[2] = new Helicopter();

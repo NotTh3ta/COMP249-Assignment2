@@ -10,9 +10,9 @@ public class UAV extends FlyingObject{
         price = 1000000.0;
     }
 
-    public UAV(double w, double p){
-        weight = w;
-        price = p;
+    public UAV(double _weight, double _price){
+        weight = _weight;
+        price = _price;
     }
 
     public UAV(UAV u){

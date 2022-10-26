@@ -10,9 +10,9 @@ public class Multirotor extends Helicopter{
         numberOfRotors = 6;
     }
 
-    public Multirotor(String s, double d, int i, int x, int y, int z, int r){
-        super(s, d, i, x, y, z);
-        numberOfRotors = r;
+    public Multirotor(String _brand, double _price, int hp, int nCyl, int cYear, int passCap, int nRotor){
+        super(_brand, _price, hp, nCyl, cYear, passCap);
+        numberOfRotors = nRotor;
     }
     
     public Multirotor(Multirotor m){
