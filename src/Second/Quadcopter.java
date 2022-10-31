@@ -45,15 +45,27 @@ public class Quadcopter extends Helicopter {
     }
 
     // Mutators
+    /**
+     * Sets maximum flying speed to input 
+     * @param maxFlyingSpeed new maximum flying speed
+     */
     public void setMaxFlyingSpeed(int maxFlyingSpeed) {
         this.maxFlyingSpeed = maxFlyingSpeed;
     }
 
     // toString
+    /** 
+     * To string method 
+     * @return string with all the info of the object inclduing its attribute values.
+     */
     public String toString() {
         return super.toString() + " Its max flying speed is " + maxFlyingSpeed;
     }
-
+    /**
+     * Equals method for comparing Quadcopter objects. 
+     * @param x Object we want to compare equality with
+     * @return True if objects are equal Quadcopters. False for any other object passed.
+     */
     public boolean equals(Object x) {
         if (x == null || this.getClass() != x.getClass())
             return false;
