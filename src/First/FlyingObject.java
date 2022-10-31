@@ -1,6 +1,8 @@
 package First;
+
 /**
- * Flying object class with a toString method and price attribute. Contains default constructor and copy constructor
+ * Flying object class with a toString method and price attribute. Contains
+ * default constructor and copy constructor
  */
 public class FlyingObject {
     // Price attribute
@@ -12,8 +14,7 @@ public class FlyingObject {
         price = 1000;
     }
     /**
-     * Copy constructor copies passed object and calling object.
-     * @param fo passed object to be copied.
+     * Default constructor sets price to 1000;
      */
     public FlyingObject( FlyingObject fo){
         price = fo.price;

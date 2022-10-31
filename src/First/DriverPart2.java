@@ -7,7 +7,9 @@ import Fifth.*;
 
 public class DriverPart2 {
     /**
-     * Takes an array of flying objects and copies each elements into a new array that is returned
+     * Takes an array of flying objects and copies each elements into a new array
+     * that is returned
+     * 
      * @param _fo Original array of flying objects to be copied.
      * @return the copy array of flying objects.
      */
@@ -22,8 +24,11 @@ public class DriverPart2 {
 
     }
     /**
-     * Main method. Creates an array of 15 flying objects and uses copyFlyingObjects method to 
-     * copy this array into a copy array. Prints the contents of the original array and the copy.
+     * Main method. Creates an array of 15 flying objects and uses copyFlyingObjects
+     * method to
+     * copy this array into a copy array. Prints the contents of the original array
+     * and the copy.
+     * 
      * @param args
      */
     public static void main(String[] args) {

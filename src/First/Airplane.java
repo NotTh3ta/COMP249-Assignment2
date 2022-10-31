@@ -16,9 +16,10 @@ public class Airplane extends FlyingObject{
     }
     /** Parametrized Constructor
      * Creates an airplane with chosen brand, price and horsepower
+     * 
      * @param _brand The brand of the airplane
      * @param _price The price of the airplane
-     * @param hp The power of the airplane in horsepower.
+     * @param hp     The power of the airplane in horsepower.
      */
     public Airplane(String _brand, double _price, int hp){
         brand =_brand;
@@ -28,6 +29,7 @@ public class Airplane extends FlyingObject{
 
     /**Copy Constructor
      * Creates airplane with the same attributes as the input airplane
+     * 
      * @param a Input airplane to copy all attributes from.
      */
     public Airplane(Airplane a){
@@ -39,6 +41,7 @@ public class Airplane extends FlyingObject{
     //Accessors
     /**
      * Get brand accessor
+     * 
      * @return airplane brand
      */
     public String getBrand(){
