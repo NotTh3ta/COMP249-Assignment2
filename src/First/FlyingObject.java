@@ -6,7 +6,6 @@ public class FlyingObject {
     // Price attribute
     protected double price;
 
-<<<<<<< HEAD
     /**Default constructor sets price to 1000;
      */
     public FlyingObject(){
@@ -23,17 +22,5 @@ public class FlyingObject {
      */
     public String toString(){
         return "This is a flying object and it costs"+price;
-=======
-    public FlyingObject() {
-        price = 1000;
-    }
-
-    public FlyingObject(FlyingObject fo) {
-        price = fo.price;
-    }
-
-    public String toString() {
-        return "This is a flying object and it costs" + price;
->>>>>>> 5217fc79844364c6ff75b1658671a88915adf473
     }
 }

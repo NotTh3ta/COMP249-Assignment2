@@ -61,31 +61,57 @@ public class Helicopter extends Airplane{
     public int getCreationYear(){
         return creationYear;
     }
-
+    /**
+     * Returns passenger capacity
+     * @return passenger capacity
+     */
     public int getPassengerCapacity() {
         return passengerCapacity;
     }
 
     // Mutators
+
+    /**
+     * Sets number of cylinders to input value
+     * @param n new number of cylinders
+     */
     public void setNumberOfCylinders(int n) {
         numberOfCylinders = n;
     }
 
+    /**
+     * Sets creation year to input value
+     * @param y new creation year
+     */
     public void setCreationYear(int y) {
         creationYear = y;
     }
 
+    /**
+     * Sets passenger capacity to input value
+     * @param p new passenger capacity
+     */
     public void setPassengerCapacity(int p) {
         passengerCapacity = p;
     }
 
     // toString
+
+    /**
+     * To string method returns information about the helicopter including all its attributes.
+     */
     public String toString() {
         return super.toString() + " It has " + numberOfCylinders + " cylinders. It was made in " + creationYear
                 + ". Its passenger capacity is " + passengerCapacity + ".";
     }
 
     // equals
+
+    /**
+     * Equals method for comparing Helicopter objects. 
+     * @param x Object we want to compare equality with
+     * @return True if objects are equal helicopters. False for any other object passed.
+     */
     public boolean equals(Object x) {
         if (x == null || this.getClass() != x.getClass())
             return false;
