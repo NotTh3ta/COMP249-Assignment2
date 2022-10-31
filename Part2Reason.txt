@@ -1,0 +1,6 @@
+Our program did not work as intended. The ouput shows that all of the objects in our 
+array copy are FlyionObject objects, instead of what we actually set them in the driver.
+
+This is because polymorphism did not kick in, since there is no overriding being done.
+Due to polymorphism not working, instead of the constructor for each different object 
+being called, only the constructor for FlyingObjects is being called.
