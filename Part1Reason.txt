@@ -1,0 +1,3 @@
+The method works as intended. As expected, in the first array, fo1, the method was able to find
+the most and least expensive UAV. In the second array, there was no UAV object. The method returned
+that there were no UAV objects in this array.
